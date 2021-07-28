@@ -20,4 +20,5 @@ For Every Project:
 - Keep in mind, in order to sync the file (that is not yet synced and has changes) with Git and then store the repository in GitHub, we need first to Commit then Push. To Commit, we need first to save the files that has changes, then type the Commit message, then press on the Check Mark on top to commit. 
 - Before we push, we need to add a remote [Ctrl, Shift, p (Git: Add a remote)], then we paste the URL of the Repository and hit Enter, then we type the name of the remote and hit Enter (that is the name of this particular remote URL, for later in case I want to sync the same project with another remote URL so I put different name) which is better if only one remote to be the same name of the project. 
 - THEN, we go to Terminal-bash, copy this command and hit Enter: git pull <remote name> <branch>
+	NOTE: I can use --allow-unrelated-histories at the end of the command if needed to work.
 - ONLY THEN, we can Push by clicking on the sync tool on the buttom sleft side beside the master.
