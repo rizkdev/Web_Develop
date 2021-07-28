@@ -1,0 +1,23 @@
+Setup and Installs:
+
+- Install Git
+- Install VS Code
+- Go to Settings in VS Code, search for Git enable, and make sure it is checked.
+- Open Git Bash and enter this command then press Enter: git config --global user.name "Youssef Rizk"
+- Enter this command and press Enter: git config --global user.email "youssefrizk1@gmail.com"
+- Enter this command and hit Enter: ls ~/.ssh
+	if there is no pub file then continue to next step
+- Enter this command and hit Enter: ssh-keygen -t rsa -b 4096 -C "youssefrizk1@gmail.com"
+- Enter this command and hit Enter: clip < ~/.ssh/id_rsa.pub
+- Go to GitHub website and login, Go to Settings/SSH and GPG keys. Then, press on "New SSH Key" and enter any Titls, and paste in the Key box the key you copied in the last step.
+
+
+For Every Project:
+- In VS Code, open the project folder. then Go to "Source Control" menu, and hit on "Initialize Repository", and choose the workspace folder of the project.
+- Under "Changes" the files should have "U" beside them [it means they are not yet sync with Git]
+- Go to GitHub website, sign in and create a new reposatory with the same name of the project (normally the same name of the project folder) and copy its HTTPS URL. (Make sure the default branch named "master" if not go to Settings/Repositories).
+- Go back to VS Code "Source Control" menu.
+- Keep in mind, in order to sync the file (that is not yet synced and has changes) with Git and then store the repository in GitHub, we need first to Commit then Push. To Commit, we need first to save the files that has changes, then type the Commit message, then press on the Check Mark on top to commit. 
+- Before we push, we need to add a remote [Ctrl, Shift, p (Git: Add a remote)], then we paste the URL of the Repository and hit Enter, then we type the name of the remote and hit Enter (that is the name of this particular remote URL, for later in case I want to sync the same project with another remote URL so I put different name) which is better if only one remote to be the same name of the project. 
+- THEN, we go to Terminal-bash, copy this command and hit Enter: git pull <remote name> <branch>
+- ONLY THEN, we can Push by clicking on the sync tool on the buttom sleft side beside the master.
