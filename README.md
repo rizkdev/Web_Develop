@@ -1,6 +1,6 @@
 # ToDo List" app with the Done/Delete Buttons as well as the ability to pick a specific time and date!
 Languages used: HTML, CSS, and Javascript 
-##Techniques and Skills used (more technical details & screenshots below):
+## Techniques and Skills used (more technical details & screenshots below):
 - Dom manipulation
 - Real time digital clock
 - Date() methods
@@ -10,7 +10,7 @@ Languages used: HTML, CSS, and Javascript
 - Advanced CSS features like colors properties, shadows and positioning and others.
 
 
-##More details about the Techniques and Skills used:
+## More details about the Techniques and Skills used:
 Implement a real time digital clock and date constantly using Javascript:
 
 new Date(), and its methods,
